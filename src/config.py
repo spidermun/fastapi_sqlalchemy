@@ -7,3 +7,5 @@ class Settings(BaseSettings):
     POSTGRES_DB: str
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+
+CONFIG = Settings()
